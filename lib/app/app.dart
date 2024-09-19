@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:idc_client_app/app/routes.dart';
+import 'package:idc_client_app/pages/login/login_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -7,9 +8,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+//
+
       title: 'Flutter Demo',
-      initialRoute: Routes.home,
-      routes: Routes.getRoutes(),
+      debugShowCheckedModeBanner: false,
+      // initialRoute: Routes.home,
+      // routes: Routes.getRoutes(),
+
+      //
+      home: LoginPage(),
     );
   }
 }
